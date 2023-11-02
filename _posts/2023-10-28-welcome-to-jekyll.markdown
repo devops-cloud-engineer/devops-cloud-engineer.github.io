@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
+layout: default
+title:  "Welcome to DevOps world"
 date:   2023-10-28 11:22:49 +0000
 categories: jekyll update
 ---
