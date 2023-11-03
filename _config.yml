@@ -13,13 +13,47 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: DevOps RoadMap
+title: This is my Website about DevOps RoadMap
 email: muhammadyasin883@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/my-awesome-site" # the subpath of your site, e.g. /blog
+description: >- 
+A DevOps Engineer roadmap typically involves acquiring a combination of technical skills, tools proficiency, and soft skills to effectively bridge the gap between development and operations teams. Here is a generalized roadmap that you can use as a reference to develop your skills as a DevOps Engineer:
+
+Foundational Knowledge:
+
+Learn the fundamentals of software development, including programming languages such as Python, Ruby, or JavaScript.
+Gain an understanding of operating systems, networking concepts, and virtualization technologies.
+Version Control Systems:
+
+Master popular version control systems such as Git and learn how to effectively manage code repositories.
+Continuous Integration and Continuous Deployment (CI/CD):
+
+Familiarize yourself with CI/CD pipelines and tools such as Jenkins, GitLab CI/CD, or CircleCI.
+Learn how to automate the build, test, and deployment processes to ensure faster and more reliable software delivery.
+Configuration Management:
+
+Gain proficiency in configuration management tools like Ansible, Puppet, or Chef to automate the provisioning and configuration of infrastructure.
+Containerization and Orchestration:
+
+Learn containerization technologies such as Docker and container orchestration tools like Kubernetes to efficiently manage and scale applications.
+Cloud Platforms:
+
+Acquire knowledge of popular cloud platforms such as AWS, Azure, or Google Cloud to understand how to deploy, manage, and scale applications in the cloud.
+Infrastructure as Code (IaC):
+
+Learn Infrastructure as Code tools like Terraform or CloudFormation to automate the provisioning and management of infrastructure resources.
+Monitoring and Logging:
+
+Familiarize yourself with monitoring and logging tools like Prometheus, ELK stack (Elasticsearch, Logstash, Kibana), or Grafana to ensure the health and performance of applications and systems.
+Security and Compliance:
+
+Understand security best practices and tools for ensuring the security and compliance of the infrastructure and applications.
+Soft Skills:
+
+Develop strong communication and collaboration skills to effectively work with cross-functional teams.
+Cultivate problem-solving and troubleshooting abilities to address complex technical challenges efficiently.
+Emphasize adaptability and a continuous learning mindset to keep pace with the evolving DevOps landscape.
+Continuously update your skills and stay informed about emerging technologies, tools, and best practices within the DevOps domain to remain competitive and effective in your role as a DevOps Engineer.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
