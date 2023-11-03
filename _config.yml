@@ -26,7 +26,8 @@ github_username:  myasin786786
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hacker
+theme: jekyll-theme-architect
+#theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
