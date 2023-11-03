@@ -15,9 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: This is my Website about DevOps RoadMap
 email: muhammadyasin883@gmail.com
-description: >- 
-A DevOps Engineer roadmap typically involves acquiring a combination of technical skills, tools proficiency, and soft skills to effectively bridge the gap between development and operations teams. Here is a generalized roadmap that you can use as a reference to develop your skills as a DevOps Engineer:
-
+description: >#
+A DevOps Engineer roadmap typically involves acquiring a combination of technical skills, tools proficiency, and soft skills to effectively bridge the gap between development and operations teams. Here is a generalized roadmap that you can use as a reference to develop your skills as a DevOps Engineer.
 Foundational Knowledge
 
 Learn the fundamentals of software development, including programming languages such as Python, Ruby, or JavaScript.
