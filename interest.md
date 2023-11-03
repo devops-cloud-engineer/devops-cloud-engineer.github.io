@@ -1,6 +1,7 @@
 
 ---
-layout: page
+#layout: page
+layout: default
 title: Interest
 permalink: /Interest/
 ---

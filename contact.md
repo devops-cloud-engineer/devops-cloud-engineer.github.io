@@ -1,6 +1,7 @@
 
 ---
-layout: page
+#layout: page
+layout: default
 title: Contact US
 permalink: /contact/
 ---

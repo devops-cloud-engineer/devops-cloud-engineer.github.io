@@ -1,6 +1,7 @@
 
 ---
-layout: page
+#layout: page
+layout: default
 title: Certifications
 permalink: /certifications/
 ---
