@@ -38,7 +38,7 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hacker
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
