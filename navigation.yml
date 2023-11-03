@@ -1,0 +1,15 @@
+main:
+  - title: "About"
+    url: /about/
+
+  - title: "Research"
+    url: /research/
+
+  - title: "Certifications"
+    url: /certifications/
+
+  - title: "Contact"
+    url: /contact/
+
+  - title: "Interest"
+    url: /interest/
