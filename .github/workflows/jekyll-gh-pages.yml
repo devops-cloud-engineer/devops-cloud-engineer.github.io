@@ -1,0 +1,88 @@
+name: Jekyll Build, Test, and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
+
+    - name: Run Jekyll Tests
+      run: |
+        bundle exec jekyll test
+
+    - name: Deploy to GitHub Pages
+      if: ${{ github.event_name == 'push' }}
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Run additional tests
+      run: |
+        # Insert commands here to run additional tests
+        # Example: bundle exec jekyll additional_tests
+
+  branch-protection:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set branch protection rule
+      uses: actions/github-script@v5
+      with:
+        script: |
+          const github = context.github;
+          const owner = context.repo.owner;
+          const repo = context.repo.repo;
+          const branch = 'main';
+
+          github.repos.updateBranchProtection({
+            owner: owner,
+            repo: repo,
+            branch: branch,
+            required_status_checks: {
+              strict: true,
+              contexts: ['Jekyll Build, Test, and Deploy', 'Jekyll Tests']
+            },
+            enforce_admins: true,
+            required_pull_request_reviews: null,
+            restrictions: null
+          });
